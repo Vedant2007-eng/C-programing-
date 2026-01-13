@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+	int n,i;
+	float Values[100], sum = 0, Mean, variance = 0, Deviation;
+
+	printf("Enter the number of values: ");
+	scanf("%d", &n);
+
+	printf("Enter values : ");
+	for (i = 0; i < n; i++) {
+		scanf("%f", &Values[i]);
+		sum += Values[i];
+	}
+	Mean = sum / n;
+
+	for (i = 0; i < n; i++) {
+		variance += pow(Values[i] - Mean, 2);
+	}
+	variance /= n;
+
+	Deviation = sqrt(variance);
+
+	printf("Mean = %.2f\n", Mean);
+	printf("Variance = %.2f\n", variance);
+	printf("Deviation = %.2f\n", Deviation);
+	return 0;
+}

@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+// Enum to track the type of data stored in the union
+enum Type {
+    INTEGER,
+    FLOATING_POINT
+};
+
+// Union definition
+union Data {
+	int integer;
+	float floating_point;
+};
+
+// Structure definition to track the type of data stored in the union
+
+int main() {
+    // Initialize and print the union variables
+   
+
+    // Input for variable1
+   
+    
+
+    // Clear the input buffer
+   
+    // Input for variable2
+    
+
+    // Print variable1
+   
+    // Print variable2
+   
+
+	return 0;
+}

@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int arr[3] = {10, 20, 30};
+    int *p = arr; // 'p' points to the first element of 'arr' (arr[0])
+
+    printf("Value of first element: %d\\n", *p);
+    printf("Value of second element using pointer arithmetic: %d\\n", *(p + 1));
+    printf("Value of third element using array notation: %d\\n", p[2]);
+
+    // Incrementing the pointer to move to the next element
+    p++;
+    printf("Value after incrementing pointer: %d\\n", *p); // 'p' now points to 20
+
+    return 0;
+}

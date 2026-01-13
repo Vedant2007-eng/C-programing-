@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+union test {
+	// initialize required variables
+};
+
+	// write your code here
+int main()
+{
+	
+	printf("x: ");
+	//accept user input for x and assign it to the union variable x 
+	
+	
+	printf("After making x = %d:\nx= %d y= %d\n",          );
+	printf("y: ");
+	//accept user input for y and assign it to the union variable y
+
+
+
+	printf("After making y = %d:\nx= %d y= %d",            );
+ 	return 0;
+}
